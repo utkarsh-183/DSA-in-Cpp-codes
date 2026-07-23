@@ -11,6 +11,5 @@ int main()
     cin >> C;
     Avg = (M + P + C) / 3;
     cout << "aggregate of three subjects are:" << Avg;
-    cin >> Avg;
     return 0;
 }
