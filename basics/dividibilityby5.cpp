@@ -8,6 +8,6 @@ int main(){
         cout<<"divisible by 5";
     }
     else{
-        cout<<"not divisible by 5";
+        cout<<"The number is not divisible by 5";
     }
 }
