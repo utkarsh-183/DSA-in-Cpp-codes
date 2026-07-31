@@ -11,6 +11,6 @@ int main(){
     //     cout<<"odd";
     // }
     if(n%2!=0){
-        cout<<"odd";
+        cout<<"odd !!";
     }
 }
