@@ -1,0 +1,1 @@
+cout << a << " raised to the power " << b << " is " << power;
