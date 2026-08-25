@@ -7,6 +7,7 @@ int main(){
     s.push(20);
     s.push(30);
     s.push(80);
+    s.push(100);
     cout<<"size of stack is: "<<s.size()<<endl;
     cout<<"top element of stack is: "<<s.top()<<endl;
 
