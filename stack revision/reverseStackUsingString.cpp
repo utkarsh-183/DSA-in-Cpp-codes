@@ -4,14 +4,15 @@
 using namespace std;
 
 int main(){
-    string s = "Babbar";
+    string s = "Utkarsh";
+
     stack<char> ch;
     for(int i=0; i<s.length(); i++){
         ch.push(s[i]);
     }
 
     while(!ch.empty()){
-        cout<<ch.top()<<" ";
+        cout<<ch.top();
         ch.pop();
     }
 }
