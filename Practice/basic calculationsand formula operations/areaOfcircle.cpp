@@ -6,6 +6,5 @@ int main()
     cout << "Enter radius :";
     cin >> radius;
     area = 22.0 / 7.0 * radius * radius;
-    cout <<"Area is :"<<area;
-    
+    cout <<"Area is :"<<area; 
 }
