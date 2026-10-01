@@ -1,0 +1,22 @@
+store secret = random(1, 101)
+store attempts = 0
+
+say "🐧 Welcome to Pengu Guess!"
+say "Guess a number between 1 and 100"
+
+repeat 10 {
+    store guess = toInt(ask("Your guess: "))
+    attempts = attempts + 1
+
+    when guess == secret {
+        say "🎉 Correct! You won!"
+        say "Attempts: " + toString(attempts)
+        break
+    } otherwise {
+        when guess < secret {
+            say "Too low! Try higher."
+        } otherwise {
+            say "Too high! Try lower."
+        }
+    }
+}
