@@ -1,24 +1,14 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-void towerOfHanoi(int n, char source, char helper, char destination) {
-    if (n == 1) {
-        cout << "Move disk 1 from " << source << " to " << destination << endl;
-        return;
-    }
-
-    towerOfHanoi(n - 1, source, destination, helper);
-
-    cout << "Move disk " << n << " from " << source << " to " << destination << endl;
-
-    towerOfHanoi(n - 1, helper, source, destination);
+void hanoi(int n,char a, char b, char c){ //a=source rod, b=helper rod, c=destination rod
+    if(n==0) return;
+    hanoi(n-1,a,c,b);
+    cout<<a<<"->"<<c<<endl;
+    hanoi(n-1,b,a,c);
 }
-
-int main() {
+int main(){        
     int n;
-    cin >> n;
-
-    towerOfHanoi(n, 'A', 'B', 'C');
-
-    return 0;
+    cout<<"Enter number of disk : ";
+    cin>>n;
+    hanoi(n,'A','B','C');
 }
