@@ -1,4 +1,4 @@
-#include<iostream>
+git add #include<iostream>
 #include<vector>
 using namespace std;
 void printSubset(int arr[],int n,int idx,vector<int> ans,int k){
