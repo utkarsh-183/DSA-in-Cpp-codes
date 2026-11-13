@@ -1,4 +1,4 @@
-git add #include<iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
 void printSubset(int arr[],int n,int idx,vector<int> ans,int k){
@@ -17,7 +17,7 @@ void printSubset(int arr[],int n,int idx,vector<int> ans,int k){
     printSubset(arr,n,idx+1,ans,k);
 }
 int main(){
-    int arr[] = {1,2,3,4,5u};
+    int arr[] = {1,2,3,4,5};
     int n=sizeof(arr)/sizeof(arr[0]);
     vector<int> v;
     int k=3;
